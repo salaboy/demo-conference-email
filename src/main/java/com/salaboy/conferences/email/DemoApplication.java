@@ -37,6 +37,7 @@ public class DemoApplication {
     @ZeebeWorker(type = "email")
     public void sendEmailNotification(final JobClient client, final ActivatedJob job) {
         sendEmailNotification((Proposal) job.getVariablesAsMap().get("proposal"));
+        client.newCompleteCommand(job.getKey()).send();
     }
 
 
