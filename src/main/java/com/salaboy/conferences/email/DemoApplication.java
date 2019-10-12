@@ -21,7 +21,7 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Value("${version:0}")
+    @Value("${version:0.0.0}")
     private String version;
 
     @GetMapping("/info")
@@ -34,7 +34,7 @@ public class DemoApplication {
         System.out.println("Email Sent for proposal: " + proposal);
     }
 
-    @ZeebeWorker(type = "email")
+    @ZeebeWorker(name = "email-worker", type = "email")
     public void sendEmailNotification(final JobClient client, final ActivatedJob job) {
         sendEmailNotification((Proposal) job.getVariablesAsMap().get("proposal"));
         client.newCompleteCommand(job.getKey()).send();
