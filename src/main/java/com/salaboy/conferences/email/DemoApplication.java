@@ -23,7 +23,7 @@ public class DemoApplication {
     }
 
     private ObjectMapper objectMapper = new ObjectMapper();
-    
+
     @Value("${version:0.0.0}")
     private String version;
 

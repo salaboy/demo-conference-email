@@ -1,5 +1,8 @@
 package com.salaboy.conferences.email.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Proposal {
     private String title;
     private String description;
