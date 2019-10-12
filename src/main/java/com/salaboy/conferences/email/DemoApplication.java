@@ -1,5 +1,6 @@
 package com.salaboy.conferences.email;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.salaboy.conferences.email.model.Proposal;
 import io.zeebe.client.api.response.ActivatedJob;
 import io.zeebe.client.api.worker.JobClient;
@@ -21,6 +22,8 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
+    private ObjectMapper objectMapper = new ObjectMapper();
+    
     @Value("${version:0.0.0}")
     private String version;
 
@@ -36,7 +39,8 @@ public class DemoApplication {
 
     @ZeebeWorker(name = "email-worker", type = "email")
     public void sendEmailNotification(final JobClient client, final ActivatedJob job) {
-        sendEmailNotification((Proposal) job.getVariablesAsMap().get("proposal"));
+        Proposal proposal = objectMapper.convertValue(job.getVariablesAsMap().get("proposal"), Proposal.class);
+        sendEmailNotification(proposal);
         client.newCompleteCommand(job.getKey()).send();
     }
 
