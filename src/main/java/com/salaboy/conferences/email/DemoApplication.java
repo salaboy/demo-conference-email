@@ -34,22 +34,24 @@ public class DemoApplication {
 
     @PostMapping()
     public void sendEmailNotification(@RequestBody Proposal proposal) {
-        String emailBody = "Dear " + proposal.getAuthor() + ", \n";
-        if(proposal.isApproved()){
-            emailBody += "We are happy to inform you that: \n";
-        }else{
-            emailBody += "We are sorry to inform you that: \n";
+        String emailBody = "\t\t Dear " + proposal.getAuthor() + ", \n";
+        emailBody += "\t\t We are";
+        if (proposal.isApproved()) {
+            emailBody += " happy ";
+        } else {
+            emailBody += " sorry ";
         }
-        emailBody += "\t" + proposal.getTitle() + "\n";
-        if(proposal.isApproved()){
-            emailBody += " was approved";
-        }else{
-            emailBody += " was rejected";
+        emailBody += "to inform you that: \n";
+        emailBody += "\t\t\t `" + proposal.getTitle() + "` -> `" + proposal.getDescription() + "`, \n";
+        if (proposal.isApproved()) {
+            emailBody += " was approved ";
+        } else {
+            emailBody += " was rejected ";
         }
-        emailBody +=  "for this conference.";
+        emailBody += "for this conference.";
         System.out.println("+-------------------------------------------------------------------+");
         System.out.println("\t Email Sent to: " + proposal.getEmail());
-        System.out.println("\t\t Body: " + emailBody);
+        System.out.println("\t Body: " + emailBody);
         System.out.println("+-------------------------------------------------------------------+");
     }
 
