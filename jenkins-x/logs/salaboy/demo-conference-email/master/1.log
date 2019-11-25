@@ -1,17 +1,17 @@
 
-Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-dc2dc[0m
-{"level":"warn","ts":1572970091.6051126,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572970091.6060498,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-2sdg8[0m
+{"level":"warn","ts":1574677349.1089025,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574677349.1095273,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-vxlmm[0m
-{"level":"warn","ts":1572970092.895443,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1572970092.8980613,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-bw77l[0m
+{"level":"warn","ts":1574677350.5014243,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574677350.5048084,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-email-m-lhxrz[0m
-{"level":"warn","ts":1572970103.575535,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1572970104.8585503,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-email.git @ v0.0.11 in path /workspace/source"}
+Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-email-m-c929k[0m
+{"level":"warn","ts":1574677358.665358,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574677359.9826202,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-email.git @ v0.0.12 in path /workspace/source"}
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:b9738c50a7e89bb77400b105bf4924fff1bd0bba
@@ -26,7 +26,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] --------------< com.*******.conferences:conference-email >--------------
-[INFO] Building Conference Email Service 0.0.11
+[INFO] Building Conference Email Service 0.0.12
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ conference-email ---
@@ -54,35 +54,35 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.*******.conferences.email.DemoApplicationTests
-16:09:06.877 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.email.DemoApplicationTests]
-16:09:06.890 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:09:06.942 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:09:07.055 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.email.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-16:09:07.092 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.email.DemoApplicationTests], using SpringBootContextLoader
-16:09:07.100 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTests-context.xml] does not exist
-16:09:07.101 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTestsContext.groovy] does not exist
-16:09:07.102 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.email.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:09:07.103 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.email.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:09:07.251 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.email.DemoApplicationTests]
-16:09:07.509 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/email/DemoApplication.class]
-16:09:07.512 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.email.DemoApplication for test class com.*******.conferences.email.DemoApplicationTests
-16:09:07.950 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.email.DemoApplicationTests]: using defaults.
-16:09:07.956 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-16:09:07.985 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-16:09:07.997 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-16:09:07.999 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-16:09:07.999 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4cc451f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6379eb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@294425a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67d48005, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9f116cc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12468a38, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1aa7ecca, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59309333, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5876a9af]
-16:09:08.022 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.031 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.048 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.053 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.062 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.062 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.088 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@74fe5c40 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3febb011 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-16:09:08.103 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.104 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
-16:09:08.126 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@74fe5c40 testClass = DemoApplicationTests, testInstance = com.*******.conferences.email.DemoApplicationTests@5b8dfcc1, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3febb011 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-16:09:08.201 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+10:23:29.760 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.email.DemoApplicationTests]
+10:23:29.769 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+10:23:29.827 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+10:23:29.863 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.email.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+10:23:29.936 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.email.DemoApplicationTests], using SpringBootContextLoader
+10:23:29.951 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTests-context.xml] does not exist
+10:23:29.958 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.email.DemoApplicationTests]: class path resource [com/*******/conferences/email/DemoApplicationTestsContext.groovy] does not exist
+10:23:29.962 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.email.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:23:29.966 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.email.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:23:30.121 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.361 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/email/DemoApplication.class]
+10:23:30.367 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.email.DemoApplication for test class com.*******.conferences.email.DemoApplicationTests
+10:23:30.664 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.email.DemoApplicationTests]: using defaults.
+10:23:30.665 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:23:30.741 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+10:23:30.744 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+10:23:30.745 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+10:23:30.745 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4cc451f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6379eb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@294425a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67d48005, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9f116cc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12468a38, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1aa7ecca, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59309333, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5876a9af]
+10:23:30.755 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.755 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.763 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.763 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.764 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.764 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.771 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@74fe5c40 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3febb011 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+10:23:30.772 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.773 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.email.DemoApplicationTests]
+10:23:30.780 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@74fe5c40 testClass = DemoApplicationTests, testInstance = com.*******.conferences.email.DemoApplicationTests@5b8dfcc1, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3febb011 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.email.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@c46bcd4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@36b4cef0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5bfbf16f, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@44c8afef, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@e720b71], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+10:23:30.919 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
  ███████╗███████╗███████╗██████╗ ███████╗     ██████╗██╗     ██╗███████╗███╗   ██╗████████╗
  ╚══███╔╝██╔════╝██╔════╝██╔══██╗██╔════╝    ██╔════╝██║     ██║██╔════╝████╗  ██║╚══██╔══╝
@@ -95,26 +95,26 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
   Spring-Zeebe: (v0.6.0)
   Zeebe-Client: (v0.20.0)
 
-2019-11-05 16:09:09.231  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : Starting DemoApplicationTests on *******-demo-conference-email-m-1-from-build-pack-ktcks-pod-6d2 with PID 70 (started by root in /workspace/source)
-2019-11-05 16:09:09.235  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : No active profile set, falling back to default profiles: default
-2019-11-05 16:09:13.258  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.processor.PostProcessorConfiguration' of type [io.zeebe.spring.client.config.processor.PostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.310  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration' of type [io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.324  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeExpressionResolver' of type [io.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.337  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeDeploymentValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.351  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deploymentPostProcessor' of type [io.zeebe.spring.client.config.processor.DeploymentPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.381  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeWorkerValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.391  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeWorkerPostProcessor' of type [io.zeebe.spring.client.config.processor.ZeebeWorkerPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.798  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebe.client-io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties' of type [io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.813  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration$$EnhancerBySpringCGLIB$$2be88602] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.882  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'builder' of type [io.zeebe.client.impl.ZeebeClientBuilderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.892  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientSpringConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.916  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientObjectFactory' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration$$Lambda$224/1897221921] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:13.967  INFO 70 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientLifecycle' of type [io.zeebe.spring.client.ZeebeClientLifecycle] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-05 16:09:14.081  INFO 70 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : zeebeWorker: ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$d5cce325@5b56b654, beanName=demoApplication)
-2019-11-05 16:09:18.570  INFO 70 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-11-05 16:09:21.452  INFO 70 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : register job worker: ZeebeWorkerValue(type=email, name=email-worker, timeout=10000, maxJobsActive=2, beanInfo=MethodInfo(classInfo=ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$d5cce325@5b56b654, beanName=demoApplication), method=public void com.*******.conferences.email.DemoApplication.sendEmailNotification(io.zeebe.client.api.worker.JobClient,io.zeebe.client.api.response.ActivatedJob)))
-2019-11-05 16:09:21.540  INFO 70 --- [           main] c.s.c.email.DemoApplicationTests         : Started DemoApplicationTests in 13.311 seconds (JVM running for 16.841)
-2019-11-05 16:09:21.806  WARN 70 --- [ault-executor-0] io.grpc.internal.ManagedChannelImpl      : [Channel<1>: (**-zeebe:26500)] Failed to resolve name. status=Status{code=UNAVAILABLE, description=Unable to resolve host **-zeebe, cause=java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
+2019-11-25 10:23:32.127  INFO 71 --- [           main] c.s.c.email.DemoApplicationTests         : Starting DemoApplicationTests on *******-demo-conference-email-m-1-from-build-pack-2jrwb-pod-4b1 with PID 71 (started by root in /workspace/source)
+2019-11-25 10:23:32.142  INFO 71 --- [           main] c.s.c.email.DemoApplicationTests         : No active profile set, falling back to default profiles: default
+2019-11-25 10:23:37.043  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.processor.PostProcessorConfiguration' of type [io.zeebe.spring.client.config.processor.PostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.071  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration' of type [io.zeebe.spring.client.bean.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.130  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeExpressionResolver' of type [io.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.144  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeDeploymentValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.162  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deploymentPostProcessor' of type [io.zeebe.spring.client.config.processor.DeploymentPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.235  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'readZeebeWorkerValue' of type [io.zeebe.spring.client.bean.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.243  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeWorkerPostProcessor' of type [io.zeebe.spring.client.config.processor.ZeebeWorkerPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.429  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebe.client-io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties' of type [io.zeebe.spring.client.properties.ZeebeClientConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.523  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientStarterAutoConfiguration$$EnhancerBySpringCGLIB$$b9d12941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.570  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'builder' of type [io.zeebe.client.impl.ZeebeClientBuilderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.634  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'io.zeebe.spring.client.config.ZeebeClientSpringConfiguration' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.647  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientObjectFactory' of type [io.zeebe.spring.client.config.ZeebeClientSpringConfiguration$$Lambda$224/2027133545] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.662  INFO 71 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zeebeClientLifecycle' of type [io.zeebe.spring.client.ZeebeClientLifecycle] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 10:23:37.830  INFO 71 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : zeebeWorker: ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$63b58664@5339bbad, beanName=demoApplication)
+2019-11-25 10:23:42.864  INFO 71 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-25 10:23:46.447  INFO 71 --- [           main] i.z.s.c.c.p.ZeebeWorkerPostProcessor     : register job worker: ZeebeWorkerValue(type=email, name=email-worker, timeout=10000, maxJobsActive=2, beanInfo=MethodInfo(classInfo=ClassInfo(bean=com.*******.conferences.email.DemoApplication$$EnhancerBySpringCGLIB$$63b58664@5339bbad, beanName=demoApplication), method=public void com.*******.conferences.email.DemoApplication.sendEmailNotification(io.zeebe.client.api.worker.JobClient,io.zeebe.client.api.response.ActivatedJob)))
+2019-11-25 10:23:46.549  INFO 71 --- [           main] c.s.c.email.DemoApplicationTests         : Started DemoApplicationTests in 15.613 seconds (JVM running for 18.101)
+2019-11-25 10:23:46.950  WARN 71 --- [ault-executor-0] io.grpc.internal.ManagedChannelImpl      : [Channel<1>: (**-zeebe:26500)] Failed to resolve name. status=Status{code=UNAVAILABLE, description=Unable to resolve host **-zeebe, cause=java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420)
 	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256)
 	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213)
@@ -132,7 +132,7 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388)
 	... 5 more
 }
-2019-11-05 16:09:21.924  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
+2019-11-25 10:23:47.052  WARN 71 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
 
 io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
 	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
@@ -172,7 +172,7 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
 	... 5 common frames omitted
 
-2019-11-05 16:09:22.035  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
+2019-11-25 10:23:47.153  WARN 71 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
 
 io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
 	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
@@ -212,7 +212,7 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
 	... 5 common frames omitted
 
-2019-11-05 16:09:22.136  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
+2019-11-25 10:23:47.251  WARN 71 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
 
 io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
 	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
@@ -252,7 +252,8 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
 	... 5 common frames omitted
 
-2019-11-05 16:09:22.236  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.009 s - in com.*******.conferences.email.DemoApplicationTests
+2019-11-25 10:23:47.357  WARN 71 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
 
 io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
 	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
@@ -292,88 +293,7 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
 	... 5 common frames omitted
 
-2019-11-05 16:09:22.338  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
-2019-11-05 16:09:22.440  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
-
-io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
-	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) [grpc-stub-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) [grpc-api-1.22.1.jar:1.22.1]
-	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:507) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:627) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:515) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:686) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:675) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) [grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) [grpc-core-1.22.1.jar:1.22.1]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_232]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_232]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_232]
-Caused by: java.lang.RuntimeException: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:420) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.resolveInternal(DnsNameResolver.java:256) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver$Resolve.run(DnsNameResolver.java:213) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 3 common frames omitted
-Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
-	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_232]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_232]
-	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_232]
-	at io.grpc.internal.DnsNameResolver$JdkAddressResolver.resolveAddress(DnsNameResolver.java:640) ~[grpc-core-1.22.1.jar:1.22.1]
-	at io.grpc.internal.DnsNameResolver.resolveAll(DnsNameResolver.java:388) ~[grpc-core-1.22.1.jar:1.22.1]
-	... 5 common frames omitted
-
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.395 s - in com.*******.conferences.email.DemoApplicationTests
-2019-11-05 16:09:22.541  WARN 70 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
+2019-11-25 10:23:47.454  WARN 71 --- [ault-executor-0] io.zeebe.client.job.poller               : Failed to activated jobs for worker email-worker and job type email
 
 io.grpc.StatusRuntimeException: UNAVAILABLE: Unable to resolve host **-zeebe
 	at io.grpc.Status.asRuntimeException(Status.java:533) ~[grpc-api-1.22.1.jar:1.22.1]
@@ -420,39 +340,39 @@ Caused by: java.net.UnknownHostException: **-zeebe: Name or service not known
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ conference-email ---
-[INFO] Building jar: /workspace/source/target/conference-email-0.0.11.jar
+[INFO] Building jar: /workspace/source/target/conference-email-0.0.12.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.9.RELEASE:repackage (repackage) @ conference-email ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ conference-email ---
-[INFO] Installing /workspace/source/target/conference-email-0.0.11.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.11/conference-email-0.0.11.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.11/conference-email-0.0.11.pom
+[INFO] Installing /workspace/source/target/conference-email-0.0.12.jar to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.12/conference-email-0.0.12.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/conference-email/0.0.12/conference-email-0.0.12.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ conference-email ---
 [INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  58.873 s
-[INFO] Finished at: 2019-11-05T16:09:28Z
+[INFO] Total time:  01:14 min
+[INFO] Finished at: 2019-11-25T10:23:59Z
 [INFO] ------------------------------------------------------------------------
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
-v0.38.0
+v1.0.0
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
-ERROR: logging before flag.Parse: E1105 16:09:32.720517       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-ERROR: logging before flag.Parse: E1105 16:09:32.731874       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-2019/11/05 16:09:32 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:2f75fd4d652d8a4730b0e4ebbc9609e019283536e63aab95d30fb7c7f8d444fb: no such file or directory 
+ERROR: logging before flag.Parse: E1125 10:24:00.136995      10 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E1125 10:24:00.140448      10 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/11/25 10:24:00 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c97eb5f626198602270d17adebaf19b7ab1080db65263107efbb95efee3fefe0: no such file or directory 
 [36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
-2019/11/05 16:09:34 No matching credentials were found, falling back on anonymous
+2019/11/25 10:24:01 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0002] cmd: EXPOSE                                  
 [36mINFO[0m[0002] Adding exposed port: 8080/tcp                
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-email-0.0.11.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-email-0.0.12.jar] 
 [36mINFO[0m[0002] Skipping unpacking as no commands require it. 
 [36mINFO[0m[0002] Taking snapshot of full filesystem...        
 [36mINFO[0m[0002] ENV PORT 8080                                
@@ -466,36 +386,36 @@ ERROR: logging before flag.Parse: E1105 16:09:32.731874       9 metadata.go:159]
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
 [36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-email-0.0.11.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/conference-email-0.0.12.jar] 
 [36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
-[36mINFO[0m[0003] Taking snapshot of files...                  
+[36mINFO[0m[0002] Taking snapshot of files...                  
 [36mINFO[0m[0003] WORKDIR /opt                                 
 [36mINFO[0m[0003] cmd: workdir                                 
 [36mINFO[0m[0003] Changed working directory to /opt            
 [36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
 [36mINFO[0m[0003] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
 [36mINFO[0m[0003] No files changed in this command, skipping snapshotting. 
-2019/11/05 16:09:36 existing blob: sha256:02c32ad92c0d8181bc1743181730c576205286effbb08239f8f613acda6d4889
-2019/11/05 16:09:36 existing blob: sha256:8d691f585fa8cec0eba196be460cfaffd69939782d6162986c3e0c5225d54f02
-2019/11/05 16:09:36 existing blob: sha256:740864fcc29dcd68c386fc2893b1fe5bf974e361523cb7cd32dd706fcfa93d82
-2019/11/05 16:09:36 existing blob: sha256:3da6fe7ff2ef0f58119eb2e8cb12c5c0b471527be95d43274b396f36fc5bbccd
-2019/11/05 16:09:40 pushed blob: sha256:2dd5ea6642aca92d47a6089fecd49629373a36661fdf7063ddd88e21f8d20e64
-2019/11/05 16:09:41 pushed blob: sha256:2d213d9914079742fc1ecfae189e30f2150ec505dc5f72675676b819e08c3de9
-2019/11/05 16:09:42 pushed blob: sha256:cbc8ae00c89fc9603d0d984e3888bc5719a2b412f438e9d7535c1942195926f7
-2019/11/05 16:09:44 gcr.io/camunda-consulting-de/demo-conference-email:0.0.11: digest: sha256:87552aeefc7816ea8b7537a2995eb8bd51ae5466ab0aeec9b051113d72189d25 size: 1244
+2019/11/25 10:24:03 existing blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
+2019/11/25 10:24:03 existing blob: sha256:c5943b75c9747aebea25c3fc4bf3d4b4247101176b78ada93d08446dd33f94a0
+2019/11/25 10:24:03 existing blob: sha256:c2a806caa98c159f2c9254dabd60e04352b5c8b46d2e6cc9bd8f7bfc037a4e0b
+2019/11/25 10:24:03 existing blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
+2019/11/25 10:24:06 pushed blob: sha256:4e9b455e58c99b53e4dcbadc0b9c1918eb70edafafa7bc6acfa4806ab034efdf
+2019/11/25 10:24:07 pushed blob: sha256:46ca21ed7484ed2eb6c42f8198902cc2121cb6cd21598646bbd6a1bfd38225e9
+2019/11/25 10:24:09 pushed blob: sha256:da546099d3d1461261fce22d461f007f64b70d837bb58a619afafcf2465dc99f
+2019/11/25 10:24:11 gcr.io/camunda-consulting-de/demo-conference-email:0.0.12: digest: sha256:cce416c8c9b077a6ef5b9f66b0e37e2cdbb0557ce1bcae7b2709aeecf3d01032 size: 1244
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/demo-conference-email to an unshallow repository
-Generating change log from git ref b640cfbf66c9ce913c0f96523238203983831f8a => 444348809acdef651f1fc7eb1f71c474f31a1169
-WARNING: No release found for *******/demo-conference-email and tag v0.0.11 so creating a new release
-Updated the release information at https://github.com/*******/demo-conference-email/releases/tag/v0.0.11
+Generating change log from git ref 444348809acdef651f1fc7eb1f71c474f31a1169 => df5a4c9eaedeff2f5ec8ec1b89ee2769a584ee41
+WARNING: No release found for *******/demo-conference-email and tag v0.0.12 so creating a new release
+Updated the release information at https://github.com/*******/demo-conference-email/releases/tag/v0.0.12
 generated: /workspace/source/charts/demo-conference-email/templates/release.yaml
-Created Release demo-conference-email-0-0-11 resource in namespace **
-Updating PipelineActivity *******-demo-conference-email-master-1 with version 0.0.11
-Updated PipelineActivities *******-demo-conference-email-master-1 with release notes URL: https://github.com/*******/demo-conference-email/releases/tag/v0.0.11
+Created Release demo-conference-email-0-0-12 resource in namespace **
+Updating PipelineActivity *******-demo-conference-email-master-1 with version 0.0.12
+Updated PipelineActivities *******-demo-conference-email-master-1 with release notes URL: https://github.com/*******/demo-conference-email/releases/tag/v0.0.12
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
@@ -504,38 +424,22 @@ Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file demo-conference-email-0.0.11.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file demo-conference-email-0.0.12.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
 Showing logs for build [32msalaboy-demo-conference-email-m-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
-Promoting app demo-conference-email version 0.0.11 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-soujava-**-staging/pull/5
-Added label updatebot to Pull Request https://github.com/*******/environment-soujava-**-staging/pull/5
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-soujava-**-staging/pull/5 ref d84620cc31b5b2b1d20af38e7326f52df830888c Could not find a status for repository *******/environment-soujava-**-staging with ref d84620cc31b5b2b1d20af38e7326f52df830888c
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-got git provider status pending from PR https://github.com/*******/environment-soujava-**-staging/pull/5
-Pull Request https://github.com/*******/environment-soujava-**-staging/pull/5 is merged at sha 14f6122c48ca774f5ca85814a8fe07b36d02647e
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app demo-conference-email version 0.0.12 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-webinar-nov-staging/pull/4
+Added label updatebot to Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/4
+Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/4 is merged at sha 903978ba1893388b2e18d3841507b9f4c2547509
 Pull Request merged but we are not waiting for the update pipeline to complete!
 WARNING: Could not find the service URL in namespace **-staging for names demo-conference-email, **-demo-conference-email, **-staging-demo-conference-email
