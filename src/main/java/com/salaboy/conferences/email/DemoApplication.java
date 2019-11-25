@@ -34,7 +34,23 @@ public class DemoApplication {
 
     @PostMapping()
     public void sendEmailNotification(@RequestBody Proposal proposal) {
-        System.out.println("Email Sent for proposal: " + proposal);
+        String emailBody = "Dear " + proposal.getAuthor() + ", \n";
+        if(proposal.isApproved()){
+            emailBody += "We are happy to inform you that: \n";
+        }else{
+            emailBody += "We are sorry to inform you that: \n";
+        }
+        emailBody += "\t" + proposal.getTitle() + "\n";
+        if(proposal.isApproved()){
+            emailBody += " was approved";
+        }else{
+            emailBody += " was rejected";
+        }
+        emailBody +=  "for this conference.";
+        System.out.println("+-------------------------------------------------------------------+");
+        System.out.println("\t Email Sent to: " + proposal.getEmail());
+        System.out.println("\t\t Body: " + emailBody);
+        System.out.println("+-------------------------------------------------------------------+");
     }
 
     @ZeebeWorker(name = "email-worker", type = "email")
